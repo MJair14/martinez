@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styless.css">
+    <title>INCIDENCIA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 60px;
+        }
+        .form-section {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .table-section {
+            flex: 2;
+        }
+        .card {
+            margin-top: 20px;
+        }
+    </style>
+
+
+
+</head>
+<body >
+    <header class="navbar">
+        <img src="img/GBM.png" alt="Logo Izquierdo" class="logo izquierda">
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="regi-inci.html">Registrar Incidencia</a>
+            <a href="#">Mis Incidencias</a>
+        </nav>
+        <a href="login.html">
+            <img src="img/usu.png" alt="Logo Derecho" class="logo derecha">
+        </a>
+
+    </header>
+
+
+   
+  
+    <div class="container">
+        <div class="form-section">
+            <h2>REGISTRO DE CLIENTES</h2>
+            <form action="guardar_incidencia.jsp" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" required>
+                
+                <label for="Apellidos">Apellidos:</label>
+                <input type="text" id="Apellidos" name="Apellidos" class="form-control" required>
+
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" class="form-control" required>
+                
+                <label for="correo">Correo:</label>
+                <input type="text" id="correo" name="correo" class="form-control" required>
+
+                <label for="contraseña">Contraseña:</label>
+                <input type="text" id="contraseña" name="contraseña" class="form-control" required>
+                
+                <label for="direcion">Direcion:</label>
+                <input type="text" id="direcion" name="direcion" class="form-control" required>
+                
+
+                
+               
+                <p>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseIncidencias" aria-expanded="false" aria-controls="collapseIncidencias">
+                        REGISTRAR
+                    </button>
+                </p>
+            </form>
+        </div>
+
+        <div class="table-section">
+            <div style="min-height: 120px;">
+                <div class="collapse" id="collapseIncidencias">
+                    <div class="card card-body">
+                        <h3>Lista de Cliente</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>nombre</th>
+                                    <th>Apellidos</th>
+                                    <th>DNI</th>
+                                    <th>Correo Electrnico</th>
+                                    <th>Direcion</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Aquí se llenará con datos de la base de datos -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.11/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    
+</body>
+</html>
+
+
+
+
+
+

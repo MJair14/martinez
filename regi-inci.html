@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styless.css">
+    <title>INCIDENCIA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 150px;
+        }
+        .form-section {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .table-section {
+            flex: 2;
+        }
+        .card {
+            margin-top: 20px;
+        }
+    </style>
+
+
+
+</head>
+<body >
+    <header class="navbar">
+        <img src="img/GBM.png" alt="Logo Izquierdo" class="logo izquierda">
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="regi-inci.html">Registrar Incidencia</a>
+            <a href="#">Mis Incidencias</a>
+        </nav>
+        <a href="login.html">
+            <img src="img/usu.png" alt="Logo Derecho" class="logo derecha">
+        </a>
+
+    </header>
+
+
+   
+  
+    <div class="container">
+        <div class="form-section">
+            <h2>Agregar Incidencia</h2>
+            <form action="guardar_incidencia.jsp" method="post">
+                <label for="solicitante">DISPOSITIVO:</label>
+                <input type="text" id="DISPOSITIVO" name="solicitante" class="form-control" required>
+                
+                <label for="asunto">ASUNTO:</label>
+                <input type="text" id="asunto" name="asunto" class="form-control" required>
+                
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" class="form-control" required>
+                    <option value="solucionado">Solucionado</option>
+                    <option value="atencion a domicilio">Atención a Domicilio</option>
+                    <option value="pendiente">Pendiente</option>
+                </select>
+                <label for="asunto">DETALLE:</label>
+                <textarea id="DETALLE" name="DETALLE" rows="4" cols="50" placeholder="Escribe tu comentario aquí..."></textarea><br>
+                
+                <p>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseIncidencias" aria-expanded="false" aria-controls="collapseIncidencias">
+                        Agregar
+                    </button>
+                </p>
+            </form>
+        </div>
+
+        <div class="table-section">
+            <div style="min-height: 120px;">
+                <div class="collapse" id="collapseIncidencias">
+                    <div class="card card-body">
+                        <h3>Lista de Incidencias</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>DISPOSITIVOS</th>
+                                    <th>ASUNTO</th>
+                                    <th>TIPO</th>
+                                    <th>DETALLE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Aquí se llenará con datos de la base de datos -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.11/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    
+</body>
+</html>
+
+
+
+
+
+

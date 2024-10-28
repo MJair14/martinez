@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Incidencias</title>
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="img/GBM.png" alt="Logo" style="height: 50px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">INICIAR SESIÓN</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenedor de la tabla de incidencias -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Lista de Incidencias</h2>
+        <table class="table table-bordered table-hover table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID de Incidencia</th>
+                    <th>Fecha de Creación</th>
+                    <th>Usuario Reportante</th>
+                    <th>Descripción</th>
+                    <th>Prioridad</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>2024-10-27</td>
+                    <td>Juan Pérez</td>
+                    <td>Error al iniciar sesión</td>
+                    <td>Alta</td>
+                    <td>Abierta</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>2024-10-26</td>
+                    <td>Ana García</td>
+                    <td>Problema con la red</td>
+                    <td>Media</td>
+                    <td>En Proceso</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>2024-10-25</td>
+                    <td>Luis Gómez</td>
+                    <td>El sistema se congela</td>
+                    <td>Alta</td>
+                    <td>Abierta</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>2024-10-24</td>
+                    <td>María Luque</td>
+                    <td>Reporte no se genera</td>
+                    <td>Baja</td>
+                    <td>Cerrada</td>
+                </tr>
+                <tr>
+                    <td>005</td>
+                    <td>2024-10-23</td>
+                    <td>Pedro Torres</td>
+                    <td>Problema con la impresora</td>
+                    <td>Media</td>
+                    <td>En Proceso</td>
+                </tr>
+                <tr>
+                    <td>006</td>
+                    <td>2024-10-22</td>
+                    <td>Laura Sánchez</td>
+                    <td>Error de conexión</td>
+                    <td>Alta</td>
+                    <td>Abierta</td>
+                </tr>
+                <tr>
+                    <td>007</td>
+                    <td>2024-10-21</td>
+                    <td>Jorge Ramírez</td>
+                    <td>Error en la carga de archivos</td>
+                    <td>Media</td>
+                    <td>Resuelta</td>
+                </tr>
+                <tr>
+                    <td>008</td>
+                    <td>2024-10-20</td>
+                    <td>Andrea Ponce</td>
+                    <td>Problema con actualización</td>
+                    <td>Alta</td>
+                    <td>En Proceso</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

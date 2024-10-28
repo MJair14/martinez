@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesL.css">
+    <title>Menú con Logos y Degradado</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+
+
+</head>
+<body >
+    <header class="navbar">
+        <img src="img/GBM.png" alt="Logo Izquierdo" class="logo izquierda">
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="regi-inci.html">Registrar Incidencia</a>
+            <a href="lista_I.html">Mis Incidencias</a>
+        </nav>
+        <a href="login.html">
+            <img src="img/usu.png" alt="Logo Derecho" class="logo derecha">
+        </a>
+
+    </header>
+
+    
+     <!-- Contenedor de la tabla de incidencias -->
+     <div class="container mt-5">
+        <h2 class="text-center mb-4">Lista de Incidencias</h2>
+        <table class="table table-bordered table-hover table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID de Incidencia</th>
+                    <th>Fecha de Creación</th>
+                    <th>Usuario Reportante</th>
+                    <th>Descripción</th>
+                    <th>Prioridad</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>2024-10-27</td>
+                    <td>Juan Pérez</td>
+                    <td>Error al iniciar sesión</td>
+                    <td>Alta</td>
+                    <td>Abierta</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>2024-10-26</td>
+                    <td>Ana García</td>
+                    <td>Problema con la red</td>
+                    <td>Media</td>
+                    <td>En Proceso</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>2024-10-25</td>
+                    <td>Luis Gómez</td>
+                    <td>El sistema se congela</td>
+                    <td>Alta</td>
+                    <td>Abierta</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>2024-10-24</td>
+                    <td>María Luque</td>
+                    <td>Reporte no se genera</td>
+                    <td>Baja</td>
+                    <td>Cerrada</td>
+                </tr>
+                <tr>
+                    <td>005</td>
+                    <td>2024-10-23</td>
+                    <td>Pedro Torres</td>
+                    <td>Problema con la impresora</td>
+                    <td>Media</td>
+                    <td>En Proceso</td>
+                </tr>
+                <tr>
+                    <td>006</td>
+                    <td>2024-10-22</td>
+                    <td>Laura Sánchez</td>
+                    <td>Error de conexión</td>
+                    <td>Alta</td>
+                    <td>Abierta</td>
+                </tr>
+                <tr>
+                    <td>007</td>
+                    <td>2024-10-21</td>
+                    <td>Jorge Ramírez</td>
+                    <td>Error en la carga de archivos</td>
+                    <td>Media</td>
+                    <td>Resuelta</td>
+                </tr>
+                <tr>
+                    <td>008</td>
+                    <td>2024-10-20</td>
+                    <td>Andrea Ponce</td>
+                    <td>Problema con actualización</td>
+                    <td>Alta</td>
+                    <td>En Proceso</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
+
+
